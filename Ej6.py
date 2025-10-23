@@ -4,7 +4,8 @@
 # misma frase pero con la vocal
 #introducida en mayúscula.
 frase=input("introduzca una frase : ") 
-vocal=input("introduzca una vocal")
+vocal=input("introduzca una vocal : ")
+
 x=frase.replace(vocal,vocal.upper())
 print(x)
 
