@@ -3,10 +3,10 @@
 #contraseña introducida por el usuario coincide con la guardada en la variable sin
 #tener en cuenta mayúsculas y minúsculas.
 
-contraseña=input("Introduzca una contraseña")
+contraseña="ejemplo"
 login=input("Login : ")
 
-if login == contraseña:
+if login.lower() == contraseña.lower():
     print("Es correcto")
 else:
     print("No son correctos los credenciales")
