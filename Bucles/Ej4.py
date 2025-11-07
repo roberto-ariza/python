@@ -3,5 +3,7 @@
 #pantalla la cuenta atrás desde ese número hasta cero separados por comas.
 
 user=int(input("Numero entero positivo : "))
-for i in range(10,0,-1):
+i=user
+while i>=0:
     print(i)
+    i=i-1
