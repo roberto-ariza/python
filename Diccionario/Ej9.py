@@ -8,7 +8,29 @@
 #el programa debe mostrar por pantalla la cantidad cobrada hasta el momento y la
 #cantidad pendiente de cobro.
 
+facturas={}
+cobrado=0
 
-while True:
-    p=str(input("¿Que desea hacer? : "))
-    if p == "factura" :
+while True :
+    print("\n1. Añadir factura")
+    print("2. Pagar factura")
+    print("3. Terminar")
+
+    opcion=int(input("Dime que opcion deseas realizar : "))
+
+    if opcion==1:
+        numero=int(input("Dime el numero de factura : "))
+        coste=int(input("Dime el coste : "))
+        facturas[numero]=coste
+    elif opcion==2:
+        numero=int(input("Dime el numero de fatura que quieres pagar"))
+        if numero in facturas:
+            cobrado = cobrado + facturas[numero]
+            del facturas[numero]
+        else:
+            print("Esa factura no existe")
+
+    
+        
+        
+
